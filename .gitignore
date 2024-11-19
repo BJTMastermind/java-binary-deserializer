@@ -1,5 +1,10 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Compiled files
+*.class
+/bin/
+/.vscode/
 
+# Misc files
+*.directory
+
+# legacy jython code
+/legacy_jython_stuff/

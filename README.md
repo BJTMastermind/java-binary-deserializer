@@ -1,33 +1,21 @@
-Java Binary Data Deserializer
-====
+# Java Binary Data Deserializer
 
+## Requirements
 
-Requirements
-----
+* Java 17
 
-* Jython 2.7:
-```bash
-cd requirements/
-java -jar jython-installer-2.7.0.jar
-```
+## Quick usage examples
 
-* Required Jython libraries:
-```bash
-~/jython2.7.0/bin/pip install -r ./requirements/requirements.txt
-```
-
-Quick usage examples
-----
 * Deserialize Java Serialized Binary data:
 ```bash
-CLASSPATH=./jar/*:./APP_JAR_DIRECTORY/* ~/jython2.7.0/bin/jython java_deserializer.py --deserialize -f <input_java_binary> -o <output_filename>
+java -jar javaDeserializer.jar --deserialize -f <input_java_binary> -o <output_filename>
 ```
 
 * Serialize into Java Binary data
 ```bash
-CLASSPATH=./jar/*:./APP_JAR_DIRECTORY/* ~/jython2.7.0/bin/jython java_deserializer.py --serialize -f <input_deserialized_data> -o <output_filename>
+java -jar javaDeserializer.jar --serialize -f <input_deserialized_data> -o <output_filename>
 ```
 
-References
-----
+## References
+
 https://docs.oracle.com/javase/8/docs/platform/serialization/spec/protocol.html
